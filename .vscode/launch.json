@@ -12,13 +12,19 @@
         "-r",
         "tsconfig-paths/register"
       ],
-      "args": ["src/main.ts"],
+      "args": [
+        "src/main.ts"
+      ],
       "env": {
         "NODE_ENV": "development"
       },
       "sourceMaps": true,
       "smartStep": true,
-      "console": "integratedTerminal"
+      "console": "integratedTerminal",
+      "skipFiles": [
+        "<node_internals>/**",
+        "**/node_modules/**"
+      ]
     }
   ]
 }
